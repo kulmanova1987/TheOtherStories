@@ -22,6 +22,12 @@
     .main__work-decs{
         justify-content: flex-start;
     }
+    .main__awards-lists{
+        gap: 45px;
+    }
+    .main__awards-content::before{
+        left: 75px;
+    }
 }
 @media (max-width:1110px) {
     .main__awards-title{
@@ -51,6 +57,7 @@
     }
     .main__content::after{
         left: 98px;
+        height: 770px;
     }
     .main__awards-content{
         padding-right: 25px;
@@ -58,6 +65,7 @@
     .main__universe-content{
         padding: 0 15px;
     }
+    
     
 }
 
@@ -119,6 +127,21 @@
         content: none;
     }
 }
+@media (max-width:780px) {
+    .header__title-elements::after{
+        bottom: -50px;
+        right: -70px;
+        width: 110px;
+        height: 100%;
+        background-size: 110px;
+    }
+    .header__title-elements:before{
+        width: 110px;
+        height: 100%;
+        background-size: 110px;
+        top: -50px;
+    }
+}
 @media (max-width:768px) {
     .burger{
         display: flex;
@@ -129,7 +152,7 @@
     align-items: center;
     justify-content: center;
     left: 0;
-    right: -15px;
+    right: 0;
     top: -100%;
     transition: 0.5s;
     background: var(--blackColor);
@@ -138,6 +161,9 @@
     }
     .header__nav-content.active{
         top: 0;
+    }
+    .header__content-logo{
+        display: flex;
     }
     .header__content, .main__content{
         margin-left: 0;
@@ -160,6 +186,9 @@
     }
     .header__title-elements::after{
         background-size: 100px;
+        bottom: -10px;
+        right: -95px;
+    
     }
     .main__content-info{
         margin-left: 130px;
@@ -185,6 +214,11 @@
     .swiper-slide {
         width: 100%;
         margin: auto;
+    }
+}
+@media (max-width:730px) {
+    .footer__contacts-list{
+        justify-content: center;
     }
 }
 @media (max-width:670px) {
@@ -267,7 +301,7 @@
 }
 .header__nav-content{
     right: 0;
-    top: -105%;
+    top: -120%;
 }
 .footer_contacts-link{
     font-size: 16px;
@@ -293,5 +327,8 @@
     }
     .header__content-right {
         padding-right: 15px;
+    }
+    .main__awards-lists{
+        justify-content: center;
     }
 }

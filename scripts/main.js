@@ -36,12 +36,14 @@ if (animItems.length > 0) {
         scrollTop = window.pageYoffset || document.documentElement.scrollTop;
       return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
     }
-  
-    setTimeout(() => {
-      animScroll();
-    }, 300);
+  setInterval(() => {
+    animScroll();
+  }, 300);
+    // setTimeout(() => {
+    //   animScroll();
+    // }, 300);
   }
-  
+ 
   // mobile menu
   
   let burger = document.querySelector('.burger'),
@@ -94,6 +96,3 @@ if (animItems.length > 0) {
 
 
 
-// document.querySelector('body').addEventListener('scroll', ()=> {
-//   scroll.
-// })
